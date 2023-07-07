@@ -8,7 +8,7 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=360;
+		nextID=367;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=25;
+		nextID=33;
 	};
 	class Camera
 	{
-		pos[]={9798.4424,225.88213,5963.6123};
-		dir[]={-0.4728663,-0.58769149,0.65661848};
-		up[]={-0.34345162,0.809071,0.47691223};
-		aside[]={0.81152302,2.9127114e-007,0.58441746};
+		pos[]={9738.5,179.75,5733.125};
+		dir[]={0.13499242,-0.5046941,0.85267699};
+		up[]={0.078917958,0.86329818,0.49848476};
+		aside[]={0.98769683,-7.4505806e-009,-0.15636778};
 	};
 };
 binarizationWanted=0;
@@ -64,13 +64,15 @@ addons[]=
 	"A3_Structures_F_Enoch_Military_Camonets",
 	"rhsusf_c_melb",
 	"A3_Characters_F_Exp",
-	"A3_Armor_F_Exp_MBT_01"
+	"A3_Armor_F_Exp_MBT_01",
+	"A3_Structures_F_Exp_Cultural_AncientRelics",
+	"A3_Structures_F_Ind_PowerLines"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=32;
+		items=33;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -290,6 +292,13 @@ class AddonsMetaData
 		{
 			className="A3_Armor_F_Exp";
 			name="Arma 3 Apex - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item32
+		{
+			className="A3_Structures_F_Exp_Cultural";
+			name="Arma 3 Apex - Cultural Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -1919,7 +1928,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=39;
+		items=42;
 		class Item0
 		{
 			dataType="Marker";
@@ -5031,6 +5040,7 @@ class Mission
 							};
 							id=254;
 							type="rhsusf_army_ucp_helipilot";
+							atlOffset=-3.0517578e-005;
 						};
 						class Item1
 						{
@@ -5041,12 +5051,12 @@ class Mission
 								angles[]={6.2315583,5.5626082,6.2798514};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=255;
 							type="rhsusf_army_ucp_helipilot";
+							atlOffset=2.7232513;
 						};
 						class Item2
 						{
@@ -5057,12 +5067,12 @@ class Mission
 								angles[]={6.2315583,5.5626082,6.2798514};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=256;
 							type="rhsusf_army_ucp_helicrew";
+							atlOffset=2.7232513;
 						};
 						class Item3
 						{
@@ -5073,12 +5083,12 @@ class Mission
 								angles[]={6.2315583,5.5626082,6.2798514};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=257;
 							type="rhsusf_army_ucp_helicrew";
+							atlOffset=2.7232513;
 						};
 					};
 					class Attributes
@@ -5179,6 +5189,7 @@ class Mission
 							};
 							id=352;
 							type="rhsusf_army_ocp_helipilot";
+							atlOffset=-1.5258789e-005;
 						};
 						class Item1
 						{
@@ -5189,12 +5200,12 @@ class Mission
 								angles[]={6.244875,5.5758033,6.2631841};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=353;
 							type="rhsusf_army_ocp_helipilot";
+							atlOffset=3.7317505;
 						};
 						class Item2
 						{
@@ -5205,12 +5216,12 @@ class Mission
 								angles[]={6.244875,5.5758033,6.2631841};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=354;
 							type="rhsusf_army_ocp_helipilot";
+							atlOffset=3.7317505;
 						};
 						class Item3
 						{
@@ -5221,12 +5232,12 @@ class Mission
 								angles[]={6.244875,5.5758033,6.2631841};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=355;
 							type="rhsusf_army_ocp_helipilot";
+							atlOffset=3.7317505;
 						};
 					};
 					class Attributes
@@ -5428,7 +5439,7 @@ class Mission
 				};
 			};
 			id=246;
-			atlOffset=-0.013183594;
+			atlOffset=-0.0015106201;
 		};
 		class Item20
 		{
@@ -10951,13 +10962,12 @@ class Mission
 						angles[]={6.2232509,5.5626082,6.248209};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=331;
 					type="rhsusf_army_ucp_helipilot";
-					atlOffset=1.5258789e-005;
+					atlOffset=1.9448395;
 				};
 			};
 			class Attributes
@@ -11631,7 +11641,7 @@ class Mission
 					};
 					id=358;
 					type="B_T_Crew_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=-1.5258789e-005;
 				};
 				class Item1
 				{
@@ -11642,13 +11652,13 @@ class Mission
 						angles[]={6.2182765,4.5137181,6.226584};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=359;
 					type="B_T_Crew_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=2.0242615;
 				};
 			};
 			class Attributes
@@ -11687,7 +11697,6 @@ class Mission
 				};
 			};
 			id=356;
-			atlOffset=1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11721,7 +11730,6 @@ class Mission
 			};
 			id=357;
 			type="B_T_MBT_01_mlrs_F";
-			atlOffset=1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11739,6 +11747,49 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item39
+		{
+			dataType="Marker";
+			position[]={13601.5,20.828278,11129.875};
+			name="screamer_1";
+			text="screamer_1";
+			type="Empty";
+			id=360;
+			atlOffset=1.9073486e-006;
+		};
+		class Item40
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13636.537,23.306633,11092.618};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=361;
+			type="Land_AncientStatue_01_F";
+			atlOffset=-0.0035057068;
+		};
+		class Item41
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13440.25,59.087517,10907.5};
+				angles[]={0,3.0739086,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="null=[this,400,true,70,false] execvm ""AL_twins\sparky.sqf""";
+			};
+			id=366;
+			type="Land_HighVoltageTower_largeCorner_F";
 		};
 	};
 };
