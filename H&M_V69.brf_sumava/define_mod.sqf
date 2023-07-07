@@ -42,7 +42,7 @@ BIS_respSpecLists = true;                // Show list of available units and loc
 */
 private _weapons = [];
 private _magazines = [];
-private _items = [];
+private _items = ["SkeetIR_TWS_pip","NForce_Atcr_RMR_Top_SkeetIR_Down","rhsusf_acc_anpas13gv1","optic_tws_mg","optic_tws_mg"];
 private _backpacks = [];
 
 btc_custom_arsenal = [_weapons, _magazines, _items, _backpacks];
