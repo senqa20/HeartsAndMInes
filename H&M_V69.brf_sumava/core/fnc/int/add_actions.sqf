@@ -237,7 +237,7 @@ if (btc_p_arsenal_Restrict isNotEqualTo 0) then {[btc_gear_object, btc_p_arsenal
 //Door
 _action = ["door_break", localize "STR_BTC_HAM_ACTION_DOOR_BREAK", "\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa", {
     [btc_door_fnc_break] call CBA_fnc_execNextFrame;
-}, {"ACE_wirecutter" in items player}] call ace_interact_menu_fnc_createAction;
+}, {"ACE_DefusalKit" in items player}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions", "ACE_Equipment"], _action] call ace_interact_menu_fnc_addActionToObject;
 
 //Flag
