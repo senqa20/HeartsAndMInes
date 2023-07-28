@@ -705,7 +705,7 @@ btc_rep_level_high = 750;
 btc_units_owners = [];
 
 //Door
-btc_door_breaking_time = 15;
+btc_door_breaking_time = 7;
 
 //Flag
 btc_flag_textures = [
