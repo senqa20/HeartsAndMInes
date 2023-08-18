@@ -404,7 +404,7 @@ btc_animals_type = ["Hen_random_F", "Cock_random_F", "Fin_random_F", "Alsatian_R
 
 //FOB
 btc_fob_mat = "Land_Cargo20_blue_F";
-btc_fob_structure = "Land_Cargo_HQ_V1_F";
+btc_fob_structure = "Land_cargo_house_slum_F";
 btc_fob_flag = "Flag_NATO_F";
 btc_fob_id = 0;
 btc_fob_minDistance = 1500;
@@ -705,7 +705,7 @@ btc_rep_level_high = 750;
 btc_units_owners = [];
 
 //Door
-btc_door_breaking_time = 7;
+btc_door_breaking_time = 4;
 
 //Flag
 btc_flag_textures = [
